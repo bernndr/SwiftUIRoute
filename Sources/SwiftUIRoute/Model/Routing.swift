@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol Routing: Hashable {
+public protocol Routing: Equatable {
   var presentationStyle: PresentationStyle { get }
 }
 

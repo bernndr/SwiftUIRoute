@@ -8,7 +8,7 @@ public enum PresentationStyle {
 #endif
 }
 
-struct Route<R: Routing>: Hashable {
+struct Route<R: Routing>: Equatable {
   let destination: R
   let style: PresentationStyle?
 
