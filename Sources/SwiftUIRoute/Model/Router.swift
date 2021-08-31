@@ -55,7 +55,7 @@ extension Router {
 // MARK: - Dismiss Identifiable
 extension Router where R: Identifiable {
   @discardableResult
-  public func popTo(_ route: R) -> Bool {
+  public func dismiss(_ route: R) -> Bool {
     dismiss { $0.destination.id == route.id }
   }
 }
